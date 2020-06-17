@@ -14,7 +14,7 @@ struct node {
 };
 
 extern struct node *insert(struct node *tree, void *data, size_t data_size, int(*compare)(void *, void *));
-
-
+extern struct node *search(struct node *tree, void *data, size_t data_size, int(*compare)(void *, void *));
+extern void delete_node(struct node **tree, void *data, size_t data_size, int(*compare)(void *, void *));
 
 #endif //BST_H
